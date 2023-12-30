@@ -16,21 +16,24 @@ const Logo = () => {
         <img
           src="openai.png"
           alt="openai"
-          width={"30px"}
-          height={"30px"}
+          width={"50px"}
+          height={"50px"}
           className="image-inverted"
         />
       </Link>
-      <Typography
-        sx={{
-          display: { md: "block", sm: "none", xs: "none" },
-          mr: "auto",
-          fontWeight: "800",
-          textShadow: "2px 2px 20px #000",
-        }}
-      >
-        <span style={{ fontSize: "20px" }}>MERN</span>-GPT
-      </Typography>
+      <Link to={"/"} style={{ textDecoration: "none" }}>
+        <Typography
+          sx={{
+            display: { md: "block", sm: "none", xs: "none" },
+            mr: "auto",
+            fontWeight: "800",
+            textShadow: "2px 2px 20px #000",
+            fontSize: "30px",
+          }}
+        >
+          <span style={{ fontSize: "40px" }}>MERN</span>-GPT
+        </Typography>
+      </Link>
     </div>
   );
 };

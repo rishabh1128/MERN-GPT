@@ -13,6 +13,7 @@ const CustomizedInput = (props: Props) => {
       name={props.name}
       label={props.label}
       type={props.type}
+      autoComplete="off"
       InputProps={{
         style: {
           width: "400px",
