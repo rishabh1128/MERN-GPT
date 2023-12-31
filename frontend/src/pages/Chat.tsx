@@ -214,6 +214,10 @@ const Chat = () => {
           <input
             ref={inputRef}
             type="text"
+            onKeyUp={(e) => {
+              if (e.key == "Enter") handleSubmit();
+            }}
+            onSubmit={handleSubmit}
             placeholder="Enter your message"
             style={{
               width: "100%",
@@ -225,7 +229,11 @@ const Chat = () => {
               fontSize: "20px",
             }}
           />
-          <IconButton onClick={handleSubmit} sx={{ color: "white", mx: "1" }}>
+          <IconButton
+            type="submit"
+            onClick={handleSubmit}
+            sx={{ color: "white", mx: "1" }}
+          >
             <IoMdSend />
           </IconButton>
         </div>
