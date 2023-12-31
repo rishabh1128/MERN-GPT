@@ -8,9 +8,7 @@ config();
 const app = express();
 
 //middlewares
-app.use(
-  cors({ origin: "https://mern-gpt-beige.vercel.app/", credentials: true })
-); //change after deployment
+app.use(cors()); //change after deployment
 app.use(express.json());
 app.use(cookieParser(process.env.COOKIE_SECRET));
 
